@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #f8f9fa;
+    --bg-card: #ffffff;
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-cad: rgba(0, 0, 0, 0.12);
+  }
+
+  body {
+    background-color: #f8f9fa;
+    color: #0f172a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+  }
+}
+
+.outline-text {
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.15);
+  color: transparent;
+}
+
+.outline-text-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.4);
+  color: transparent;
+}
+
+.outline-text-bold {
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.85);
+  color: transparent;
+}
+
+.font-telemetry {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-poster {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-luxury {
+  font-family: 'Cinzel', serif;
+}
+
+/* Technical Blueprint Grid Pattern for Light & Vibrant Backgrounds */
+.bg-blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-blueprint-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* Reference Image 3.jpg Dot Matrix Pattern */
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.18) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+.bg-dot-matrix-red {
+  background-image: radial-gradient(rgba(225, 6, 0, 0.25) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+/* High Speed Dynamic Racing Trajectory */
+.racing-speedline {
+  background: linear-gradient(90deg, transparent, #facc15, #e10600, transparent);
+}
+
+/* Carbon Fiber Texture Overlay */
+.bg-carbon-pattern {
+  background: 
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.05) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.05) 15%, transparent 20%) 8px 9px;
+  background-color: #0d0e11;
+  background-size: 16px 16px;
+}
+
+/* Hide scrollbar for clean video scrawling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glowing telemetry indicator animation */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+

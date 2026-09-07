@@ -1,0 +1,6 @@
+{
+  "name": "AERO // Hypercar Atelier",
+  "description": "Luxury supercar showcase featuring interactive 3D model studio, blueprint telemetry posters, video-scrawling motion, real-time dealership inventory management, and VIP test-drive booking system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
